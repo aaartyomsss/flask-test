@@ -51,3 +51,12 @@ def get_all_messages():
     finally:
         if conn is not None:
             conn.close()
+
+
+def drop_table_message():
+    sql = 'DROP TABLE IF EXISTS message;'
+    conn = get_db_connection()
+    cur = conn.cursor()
+    cur.execute(sql)
+    conn.commit()
+    cur.close()
