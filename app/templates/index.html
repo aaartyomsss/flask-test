@@ -1,0 +1,18 @@
+{% extends 'base.html'%} {% block head %}
+<title>Page with textarea</title>
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/forms.css') }}"
+/>
+{% endblock%} {% block body%}
+<main class="main-form">
+  <h1>Complicated form</h1>
+
+  <form actions="/" method="POST" class="base-form">
+    <label for="text">Write something funny</label>
+    <textarea id="text" name="text"></textarea>
+    <button type="submit">Submit, if you are sure it is funny</button>
+  </form>
+</main>
+
+{%endblock%}

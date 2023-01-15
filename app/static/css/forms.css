@@ -1,0 +1,21 @@
+.main-form {
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+}
+
+.base-form {
+  display: flex;
+  width: 600px;
+  flex-direction: column;
+}
+
+.base-form > * {
+  margin: 1rem 0;
+}
+
+.base-form > textarea {
+  height: 100px;
+}
